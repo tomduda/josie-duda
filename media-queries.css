@@ -1,0 +1,338 @@
+@media screen and (max-width: 600px) {
+    #menu-social ul {
+	position: absolute;
+        top: 0;
+        right: 6rem;
+        display: block;
+    }
+    
+    #menu-social li a { 
+        padding-left:.5em;
+        padding-right: .5em;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    /*    #par-box{display: none}    #prlx_lyr_1{display:none}*/    
+    #meet h2{display:none}   
+    #meet p{
+        margin-top: 1em;
+        }    
+    }
+@media screen and(max-width: 600px){    
+    #prlx_lyr_1{
+        display: none !important;
+    }
+}    
+
+
+/* SERVICES RESPONSIVE */ 
+@media screen and (min-width: 450px) {    
+    .services-title {        
+        margin-bottom: 0;        
+        margin-right: 10%;        
+        width: 40%;        
+        float: left;    
+    }    
+    .services-lede {        
+        width: 50%;        
+        float: left;    
+    }    
+}
+@media screen and (min-width: 950px) {    
+        .services-list {        
+            -webkit-column-count: 2;                
+            column-count: 2;    
+        }
+}
+
+
+/* About Tom Media Queries */
+@media screen and (min-width: 650px) {    
+    .about-tom li {        
+         
+    }
+}
+
+@media screen and (min-width: 950px) {    
+        .about-tom li {        
+            width: 33.3333333333%;        
+            
+        }    
+        .about-tom-thumb {        
+            max-width: 210px;        
+            
+        }        
+        .about-tom-text {        
+               
+              
+            
+        }        
+        .about-tom-name { 
+            color: white;       
+            text-align: center;    
+    }
+}             
+
+
+@media screen and (max-width: 950px) {    
+    .about-tom-text-0 p, .about-tom-text-1 p, .about-tom-text-2 p {        
+         font-size: .9em;
+         padding-top: .2em;
+    }
+    .about-tom-text-0 h3, .about-tom-text-1 h3, .about-tom-text-2 h3{
+        font-size: 1em;
+        padding: .9em ;
+        color: black;
+    }
+}
+@media screen and (max-width: 740px) {    
+    .about-tom-text-0 p, .about-tom-text-1 p, .about-tom-text-2 p {        
+         font-size: .5em;
+         padding-top: .2em;
+    }
+    
+}
+
+ /* TESTIMONIALS RESPONSIVE */ 
+
+@media screen and (min-width: 650px) {    
+    .testimonials li {        
+        padding: 4rem 4rem;    
+    }
+}
+
+@media screen and (min-width: 950px) {    
+        .testimonials li {        
+            width: 33.3333333333%;        
+            padding: 2rem 4rem;        
+            float: left;    
+        }    
+        .testimonial-thumb {        
+            max-width: 210px;        
+            margin: 0 auto;        
+            float: none;    
+        }        
+        .testimonial-text {        
+            float: none;        
+            width: auto;        
+            margin: 0;    
+        }        
+        .testimonial-name {        
+            text-align: center;    
+            }
+}           
+
+
+@media screen and (min-width: 750px) {    
+    .front-left {        
+        width: 50%;        
+        float: left;        
+        padding-right: 4rem;    
+    }    
+    .front-right {        
+        width: 50%;        
+        float: right;        
+        padding-left: 4rem;     
+        text-align: right;    
+    }
+
+ }
+
+ @media screen and (max-width: 1099px) {    
+        .indent {        
+            margin: 0;        
+            padding: 0 4rem;    
+        }
+ }
+
+ @media screen and (max-width: 320px) {    
+            .indent {        
+                margin: 0 2rem;    }
+            }
+
+
+@media screen and (max-width: 1539px) and (min-width: 1160px){ 
+    .content-area.joshua-page {
+        margin-left: 0;
+        padding-left: 0;     }
+ }
+
+ @media screen and (max-width: 779px){
+    .front-index-thumbnail { margin-bottom: 0; }
+}
+
+
+@media screen and (max-width: 600px) {
+    .author-meta,
+    .author-description { margin-left: 0; }
+}
+
+/* Comments responsive (Comments media queries*/
+@media screen and (max-width:600px) {    
+    .comment-list ol { margin-left: 0; }
+    
+    .comment-content ol { margin-left: 1.5em; }
+    
+    .comment-content,
+    .reply { margin-left: 0; }
+}
+
+/* Meta responsive */
+@media screen and (min-width: 1320px) {
+    .single .entry-meta {
+        position: relative;
+        width: 100%;
+        //margin-left: -160px;   
+        text-align: center;
+    }
+
+    /* Blockquotes responsive */
+@media screen and (min-width: 1820px) {
+    .index-box blockquote.alignright { padding-right: 2em; }
+}
+
+@media screen and (min-width: 1320px) {
+    .index-box blockquote.alignleft { padding-left: 2em; }
+}
+
+@media screen and (max-width: 780px) {
+    blockquote.alignleft,
+    blockquote.alignright { width: 40%; }
+}
+
+@media screen and (max-width:600px) {
+    blockquote.alignleft,
+    blockquote.alignright {
+        width: 100%;
+        padding: 1em 1.5em 0;   
+    }
+}
+
+
+/* Smaller fonts for smaller screens */
+@media screen and (max-width: 680px) {
+    .entry-title {
+        font-size: 32px;
+        font-size: 3.2rem;
+        line-height: 1.3em;
+    }
+    .entry-content h1 {
+        font-size: 28px;
+        font-size: 2.8rem;
+    }
+
+    .entry-content h2 {
+        font-size: 26px;
+        font-size: 2.6rem;
+    }
+
+    .entry-content h3 {
+        font-size: 24px;
+        font-size: 2.4rem;
+    }
+
+    .entry-content h4 {
+        font-size: 22px;
+        font-size: 2.2rem;
+        
+    }
+
+    .entry-content h5 {
+        font-size: 20px;
+        font-size: 2rem;
+    }
+
+    .entry-content h6 {
+        font-size: 18px;
+        font-size: 1.8rem;
+    }
+
+    .entry-content p,
+    .entry-content ul,
+    .entry-content ol  {
+        font-size: 18px;
+        font-size: 1.8rem;
+    }
+    
+    .entry-content blockquote p {
+        font-size: 22px;
+        font-size: 2.2rem;
+        line-height: 1.5em;
+    }
+     
+    blockquote cite {
+        font-size: 14px;
+        font-size: 1.4rem;
+    }
+}
+
+
+/* Footer widgets responsive */
+@media screen and (max-width: 879px) {
+    #footer-widgets { width: 100%!important; }
+    
+    .footer-widgets .widget {
+        float: none;
+        width: 100%;
+        margin: 0 0 8rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .search-toggle {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 0;
+    }
+}
+
+/* Header responsive */
+@media screen and (max-width: 900px) {
+    .site-branding { padding: 0; }
+    
+    .title-box {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 4rem;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    .title-box { padding: 2rem; }
+}
+
+
+/* Alignment responsive */
+@media screen and (min-width: 1320px) {
+    .alignleft { margin-left: -160px; }
+}
+
+@media screen and (min-width: 1820px) {
+    .alignright { margin-right: -160px; }
+}
+@media screen and (max-width: 600px){
+    
+   nav#site-navigation {display: flex;}
+}
+
+
+@media screen and (max-width: 600px) {
+    .comment-navigation .nav-previous,
+    .post-navigation .nav-previous,
+    .comment-navigation .nav-next,
+    .post-navigation .nav-next {
+        float: none;
+        width: 100%;
+        padding: 0;
+        text-align: left;
+    }
+    
+    .comment-navigation .nav-next,
+    .post-navigation .nav-next { margin-top: 4rem; display:none}
+}
+
+
