@@ -1,6 +1,6 @@
 <?php
 /**
- * @package joshua
+ * @package josie
  */
 ?>
 
@@ -10,8 +10,8 @@
         if (has_post_thumbnail()) {
             echo '<div class="front-index-thumbnail clear">';
             echo '<div class="image-shifter">';
-            echo '<a href="' . get_permalink() . '" title="' . __('Read ', 'joshua') . get_the_title() . '" rel="bookmark">';
-            joshua_the_responsive_thumbnail( get_the_ID() );
+            echo '<a href="' . get_permalink() . '" title="' . __('Read ', 'josie') . get_the_title() . '" rel="bookmark">';
+            josie_the_responsive_thumbnail( get_the_ID() );
             echo '</a>';
             echo '</div>';
             echo '</div>';
@@ -23,7 +23,7 @@
         echo '<div class="index-box">';
         if (has_post_thumbnail()) {
             echo '<div class="small-index-thumbnail clear">';
-            echo '<a href="' . get_permalink() . '" title="' . __('Read ', 'joshua') . get_the_title() . '" rel="bookmark">';
+            echo '<a href="' . get_permalink() . '" title="' . __('Read ', 'josie') . get_the_title() . '" rel="bookmark">';
             echo the_post_thumbnail('index-thumb');
             echo '</a>';
             echo '</div>';
@@ -40,9 +40,9 @@
                 }
 
                 /* translators: used between list items, there is a space after the comma */
-                $category_list = get_the_category_list( __( ', ', 'joshua' ) );
+                $category_list = get_the_category_list( __( ', ', 'josie' ) );
 
-                if ( joshua_categorized_blog() ) {
+                if ( josie_categorized_blog() ) {
                     echo '<div class="category-list">' . $category_list . '</div>';
                 }
             ?>
@@ -50,15 +50,15 @@
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php joshua_posted_on(); ?>
+			<?php josie_posted_on(); ?>
                         <?php
                         if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) {
                             echo '<span class="comments-link">';
-                            comments_popup_link( __( ' Leave a comment ', 'joshua' ), __( '1 Comment ', 'joshua' ), __( '% Comments ', 'joshua' ) );
+                            comments_popup_link( __( ' Leave a comment ', 'josie' ), __( '1 Comment ', 'josie' ), __( '% Comments ', 'josie' ) );
                             echo '</span>';
                         }
                         ?>
-                        <?php edit_post_link( sprintf( ' | %s', __( 'Edit', 'joshua' ) ), '<span class="edit-link">', '</span>' ); ?>
+                        <?php edit_post_link( sprintf( ' | %s', __( 'Edit', 'josie' ) ), '<span class="edit-link">', '</span>' ); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
@@ -66,18 +66,18 @@
         <?php
         if( $wp_query->current_post == 0 && !is_paged() && is_front_page() ) {
             echo '<div class="entry-content">';
-            the_content( __( '', 'joshua' ) );
+            the_content( __( '', 'josie' ) );
             echo '</div>';
             echo '<footer class="entry-footer continue-reading">';
-            echo '<a href="' . get_permalink() . '" title="' . _x('Read ', 'First part of "Read *article title* in title tag of Read more link', 'joshua') . get_the_title() . '" rel="bookmark">' . __('Read <span aria-hidden="true">the article</span>', 'joshua') . '<i class="fa fa-arrow-circle-o-right"></i><span class="screen-reader-text"> ' . get_the_title() . '</span></a>';
+            echo '<a href="' . get_permalink() . '" title="' . _x('Read ', 'First part of "Read *article title* in title tag of Read more link', 'josie') . get_the_title() . '" rel="bookmark">' . __('Read <span aria-hidden="true">the article</span>', 'josie') . '<i class="fa fa-arrow-circle-o-right"></i><span class="screen-reader-text"> ' . get_the_title() . '</span></a>';
             echo '</footer><!-- .entry-footer -->';
         } else { ?>
             <div class="entry-content">
                 
                 <?php 
-                $joshua_archive_content = get_option( 'archive_setting' );
-                if ( $joshua_archive_content == 'content' ) {
-                    the_content( __( '', 'joshua' ) );
+                $josie_archive_content = get_option( 'archive_setting' );
+                if ( $josie_archive_content == 'content' ) {
+                    the_content( __( '', 'josie' ) );
                 } else {
                     the_excerpt(); 
                 }
@@ -85,10 +85,10 @@
             </div><!-- .entry-content -->
             <footer class="entry-footer continue-reading">
 		<?php 
-                if ( $joshua_archive_content == 'content' ) {
-                    echo '<a href="' . get_permalink() . '" title="' . _x('Read ', 'First part of "Read *article title* in title tag of Read more link', 'joshua') . get_the_title() . '" rel="bookmark">' . __('Read <span aria-hidden="true">the article</span>', 'joshua') . '<i class="fa fa-arrow-circle-o-right"></i><span class="screen-reader-text"> ' . get_the_title() . '</span></a>';
+                if ( $josie_archive_content == 'content' ) {
+                    echo '<a href="' . get_permalink() . '" title="' . _x('Read ', 'First part of "Read *article title* in title tag of Read more link', 'josie') . get_the_title() . '" rel="bookmark">' . __('Read <span aria-hidden="true">the article</span>', 'josie') . '<i class="fa fa-arrow-circle-o-right"></i><span class="screen-reader-text"> ' . get_the_title() . '</span></a>';
                 } else {
-                    echo '<a href="' . get_permalink() . '" title="' . __('Continue Reading ', 'joshua') . get_the_title() . '" rel="bookmark">' . __('Continue Reading', 'joshua') . '<i class="fa fa-arrow-circle-o-right"></i><span class="screen-reader-text"> ' . get_the_title() . '</span></a>'; 
+                    echo '<a href="' . get_permalink() . '" title="' . __('Continue Reading ', 'josie') . get_the_title() . '" rel="bookmark">' . __('Continue Reading', 'josie') . '<i class="fa fa-arrow-circle-o-right"></i><span class="screen-reader-text"> ' . get_the_title() . '</span></a>'; 
                 }
                 ?>
             </footer><!-- .entry-footer -->

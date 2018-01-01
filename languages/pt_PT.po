@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: joshua\n"
+"Project-Id-Version: josie\n"
 "POT-Creation-Date: 2014-08-27 10:00-0000\n"
 "PO-Revision-Date: 2014-10-02 12:13-0000\n"
 "Last-Translator: \n"
@@ -207,7 +207,7 @@ msgstr "Orgulhosamente criado em %s"
 msgid "WordPress"
 msgstr "WordPress"
 
-#. translators: %1$s = text link: joshua, URL: http://wordpress.org/themes/joshua/, %2$s = text link: mor10.com, URL: http://mor10.com/
+#. translators: %1$s = text link: josie, URL: http://wordpress.org/themes/josie/, %2$s = text link: mor10.com, URL: http://mor10.com/
 #: footer.php:27
 #, php-format
 msgid "Theme: %1$s by %2$s"

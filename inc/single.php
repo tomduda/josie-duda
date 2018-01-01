@@ -2,7 +2,7 @@
 /**
  * The Template for displaying all single posts.
  *
- * @package joshua
+ * @package josie
  */
 
 get_header('blog'); ?>
@@ -32,7 +32,7 @@ get_header('blog'); ?>
 				endif;
 			?>
                     
-                        <?php joshua_post_nav(); ?>
+                        <?php josie_post_nav(); ?>
                     <?php // echo do_shortcode('[jetpack-related-posts]'); ?>
 		<?php endwhile; // end of the loop ?>
 

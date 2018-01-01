@@ -2,7 +2,7 @@
 /**
  * Outputs the single post content. Displayed by single.php.
  * 
- * @package joshua
+ * @package josie
  */
 ?>
 
@@ -12,7 +12,7 @@
     if (has_post_thumbnail()) {
         echo '<div class="single-post-thumbnail clear">';
         echo '<div class="image-shifter">';
-        joshua_the_responsive_thumbnail( get_the_ID() );
+        josie_the_responsive_thumbnail( get_the_ID() );
         echo '</div>';
         echo '</div>';
     }
@@ -22,24 +22,24 @@
             
             <?php
                 /* translators: used between list items, there is a space after the comma */
-                $category_list = get_the_category_list( __( ', ', 'joshua' ) );
+                $category_list = get_the_category_list( __( ', ', 'josie' ) );
 
-                if ( joshua_categorized_blog() ) {
+                if ( josie_categorized_blog() ) {
                     echo '<div class="category-list">' . $category_list . '</div>';
                 }
             ?>
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 
 		<div class="entry-meta">
-                    <?php joshua_posted_on(); ?>
+                    <?php josie_posted_on(); ?>
                     <?php 
                     if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) { 
                         echo '<span class="comments-link">';
-                        comments_popup_link( __( 'Leave a comment', 'joshua' ), __( '1 Comment', 'joshua' ), __( '% Comments', 'joshua' ) );
+                        comments_popup_link( __( 'Leave a comment', 'josie' ), __( '1 Comment', 'josie' ), __( '% Comments', 'josie' ) );
                         echo '</span>';
                     }
                     ?>
-                    <?php edit_post_link( __( 'Edit', 'joshua' ), '<span class="edit-link">', '</span>' ); ?>
+                    <?php edit_post_link( __( 'Edit', 'josie' ), '<span class="edit-link">', '</span>' ); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
@@ -57,7 +57,7 @@
 
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'joshua' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'josie' ),
 				'after'  => '</div>',
 			) );
 		?>

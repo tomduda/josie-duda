@@ -1,24 +1,24 @@
 <?php
 /**
- * joshua main theme functions and definitions
+ * josie main theme functions and definitions
  *
- * @package joshua
+ * @package josie
  */
 
 /**
- * For child theme authors: To disable the styles and layouts from joshua properly, 
+ * For child theme authors: To disable the styles and layouts from josie properly, 
  * add the following code to your child theme functions.php file:
  *
  * <?php
  * add_action( 'wp_enqueue_scripts', 'dequeue_parent_theme_styles', 11 );
  * function dequeue_parent_theme_styles() {
- *     wp_dequeue_style( 'joshua-parent-style' );
- *     wp_dequeue_style( 'joshua-layout' );
+ *     wp_dequeue_style( 'josie-parent-style' );
+ *     wp_dequeue_style( 'josie-layout' );
  * }
  *
  */
 
-if ( ! function_exists( 'joshua_setup' ) ) :
+if ( ! function_exists( 'josie_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -26,15 +26,15 @@ if ( ! function_exists( 'joshua_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function joshua_setup() {
+function josie_setup() {
 
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on joshua, use a find and replace
-	 * to change 'joshua' to the name of your theme in all the template files
+	 * If you're building a theme based on josie, use a find and replace
+	 * to change 'josie' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'joshua', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'josie', get_template_directory() . '/languages' );
         
         /**
         * Set the content width based on the theme's design and stylesheet.
@@ -65,15 +65,15 @@ function joshua_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'joshua' ),
-                'social' => __( 'Social Menu', 'joshua'),
+		'primary' => __( 'Primary Menu', 'josie' ),
+                'social' => __( 'Social Menu', 'josie'),
 	) );
 
 	// Enable support for Post Formats.
 	add_theme_support( 'post-formats', array( 'aside','gallery', 'link' ) );
 
 	// Setup the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'joshua_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'josie_custom_background_args', array(
 		'default-color' => 'b2b2b2',
 		'default-image' => get_template_directory_uri() . '/images/pattern.svg',
 	) ) );
@@ -87,15 +87,15 @@ function joshua_setup() {
                 'caption',
 	) );
 }
-endif; // joshua_setup
-add_action( 'after_setup_theme', 'joshua_setup' );
+endif; // josie_setup
+add_action( 'after_setup_theme', 'josie_setup' );
 
 /**
  * Register widgetized area and update sidebar with default widgets.
  */
-function joshua_widgets_init() {
+function josie_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'joshua' ),
+		'name'          => __( 'Sidebar', 'josie' ),
 		'id'            => 'sidebar-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -104,8 +104,8 @@ function joshua_widgets_init() {
 	) );
         
         register_sidebar( array(
-		'name'          => __( 'Footer Widgets', 'joshua' ),
-                'description'   => __( 'Footer widgets area appears, not surprisingly, in the footer of the site.', 'joshua' ),
+		'name'          => __( 'Footer Widgets', 'josie' ),
+                'description'   => __( 'Footer widgets area appears, not surprisingly, in the footer of the site.', 'josie' ),
 		'id'            => 'sidebar-2',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -113,73 +113,73 @@ function joshua_widgets_init() {
 		'after_title'   => '</h1>',
 	) );
 }
-add_action( 'widgets_init', 'joshua_widgets_init' );
+add_action( 'widgets_init', 'josie_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function joshua_scripts_main() {
+function josie_scripts_main() {
         
         // Get the current layout setting (sidebar left or right)
-        $joshua_layout = get_option( 'layout_setting' );
+        $josie_layout = get_option( 'layout_setting' );
 
         // Load parent theme stylesheet even when child theme is active
         if ( is_child_theme() ) {
-                wp_enqueue_style( 'joshua-parent-style', trailingslashit( get_template_directory_uri() ) . 'style.css' );
+                wp_enqueue_style( 'josie-parent-style', trailingslashit( get_template_directory_uri() ) . 'style.css' );
         } else {
-                wp_enqueue_style( 'joshua-style', get_stylesheet_uri() );
+                wp_enqueue_style( 'josie-style', get_stylesheet_uri() );
                 
         }
 
         if (is_page_template('page-templates/page-nosidebar.php') || ! is_active_sidebar( 'sidebar-1' )) {
-            wp_enqueue_style( 'joshua-layout' , get_template_directory_uri() . '/layouts/no-sidebar.css' );
-        } elseif ( $joshua_layout == 'left-sidebar' ) {
-            wp_enqueue_style( 'joshua-layout' , get_template_directory_uri() . '/layouts/sidebar-content.css' );
+            wp_enqueue_style( 'josie-layout' , get_template_directory_uri() . '/layouts/no-sidebar.css' );
+        } elseif ( $josie_layout == 'left-sidebar' ) {
+            wp_enqueue_style( 'josie-layout' , get_template_directory_uri() . '/layouts/sidebar-content.css' );
         } else {
-            wp_enqueue_style( 'joshua-layout' , get_template_directory_uri() . '/layouts/content-sidebar.css' );
+            wp_enqueue_style( 'josie-layout' , get_template_directory_uri() . '/layouts/content-sidebar.css' );
 
         }
 
         // Load child theme stylesheet
         if ( is_child_theme() ) {
-                wp_enqueue_style( 'joshua-style', get_stylesheet_uri() );
+                wp_enqueue_style( 'josie-style', get_stylesheet_uri() );
         }
 
         // Lato http://www.google.com/fonts/specimen/Lato + PT Serif http://www.google.com/fonts/specimen/PT+Serif
-        wp_enqueue_style( 'joshua-google-fonts', '//fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Alegreya:700' );
+        wp_enqueue_style( 'josie-google-fonts', '//fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Alegreya:700' );
         
         // FontAwesome
-        wp_enqueue_style('joshua_fontawesome',  '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"');
+        wp_enqueue_style('josie_fontawesome',  '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"');
 
-	wp_enqueue_script( 'joshua-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	wp_enqueue_script( 'josie-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
         
-        wp_enqueue_script( 'joshua-search', get_template_directory_uri() . '/js/hide-search.js', array(), '20120206', true );
+        wp_enqueue_script( 'josie-search', get_template_directory_uri() . '/js/hide-search.js', array(), '20120206', true );
         
-        wp_enqueue_script( 'joshua-superfish', get_template_directory_uri() . '/js/superfish.min.js', array('jquery'), '20140328', true );
+        wp_enqueue_script( 'josie-superfish', get_template_directory_uri() . '/js/superfish.min.js', array('jquery'), '20140328', true );
         
-        wp_enqueue_script( 'joshua-superfish-settings', get_template_directory_uri() . '/js/superfish-settings.js', array('jquery'), '20140328', true );
+        wp_enqueue_script( 'josie-superfish-settings', get_template_directory_uri() . '/js/superfish-settings.js', array('jquery'), '20140328', true );
         
-        wp_enqueue_script( 'joshua-masonry', get_template_directory_uri() . '/js/masonry-settings.js', array('masonry'), '20140401', true );
+        wp_enqueue_script( 'josie-masonry', get_template_directory_uri() . '/js/masonry-settings.js', array('masonry'), '20140401', true );
         
-        wp_enqueue_script( 'joshua-enquire', get_template_directory_uri() . '/js/enquire.min.js', false, '20140429', true );
+        wp_enqueue_script( 'josie-enquire', get_template_directory_uri() . '/js/enquire.min.js', false, '20140429', true );
         
-        wp_enqueue_script( 'joshua-picturefill', get_template_directory_uri() . '/js/picturefill.min.js', false, '20140512', false );
+        wp_enqueue_script( 'josie-picturefill', get_template_directory_uri() . '/js/picturefill.min.js', false, '20140512', false );
        // wp_enqueue_script( 'jquery-apps', get_template_directory_uri() . '/js/jquery-apps.js', false, '20150101', false );
-       // wp_enqueue_script('joshua-top-menu' ,get_template_directory_uri()  . '/js/stick-to-top-menu.js', array('jquery'), '20150803');
+       // wp_enqueue_script('josie-top-menu' ,get_template_directory_uri()  . '/js/stick-to-top-menu.js', array('jquery'), '20150803');
 
 // wp_enqueue_script( 'lander-scripts', get_stylesheet_directory_uri() . '/js/landerscripts.js', array('jquery'), '20140602', false);
                 
         if (is_single() || is_author() ) {
-            	wp_enqueue_script( 'joshua-hide', get_template_directory_uri() . '/js/hide.js', array('jquery'), '20140310', true );
+            	wp_enqueue_script( 'josie-hide', get_template_directory_uri() . '/js/hide.js', array('jquery'), '20140310', true );
         }
 
-	wp_enqueue_script( 'joshua-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	wp_enqueue_script( 'josie-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'joshua_scripts_main' );
+add_action( 'wp_enqueue_scripts', 'josie_scripts_main' );
 
 /**
  * Implement the Custom Header feature.

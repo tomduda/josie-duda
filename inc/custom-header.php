@@ -1,37 +1,37 @@
 <?php
 /**
  * Custom header feature
- * @package joshua
+ * @package josie
  */
 
 /**
  * Setup the WordPress core custom header feature.
  *
- * @uses joshua_header_style()
- * @uses joshua_admin_header_style()
- * @uses joshua_admin_header_image()
+ * @uses josie_header_style()
+ * @uses josie_admin_header_style()
+ * @uses josie_admin_header_image()
  */
-function joshua_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'joshua_custom_header_args', array(
+function josie_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'josie_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => 'ffffff',
 		'width'                  => 1330,
 		'height'                 => 300,
 		'flex-height'            => false,
-		'wp-head-callback'       => 'joshua_header_style',
-		'admin-head-callback'    => 'joshua_admin_header_style',
-		'admin-preview-callback' => 'joshua_admin_header_image',
+		'wp-head-callback'       => 'josie_header_style',
+		'admin-head-callback'    => 'josie_admin_header_style',
+		'admin-preview-callback' => 'josie_admin_header_image',
 	) ) );
 }
-add_action( 'after_setup_theme', 'joshua_custom_header_setup' );
+add_action( 'after_setup_theme', 'josie_custom_header_setup' );
 
-if ( ! function_exists( 'joshua_header_style' ) ) :
+if ( ! function_exists( 'josie_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog
  *
- * @see joshua_custom_header_setup().
+ * @see josie_custom_header_setup().
  */
-function joshua_header_style() {
+function josie_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	// If no custom options for text are set, let's bail
@@ -65,15 +65,15 @@ function joshua_header_style() {
 	</style>
 	<?php
 }
-endif; // joshua_header_style
+endif; // josie_header_style
 
-if ( ! function_exists( 'joshua_admin_header_style' ) ) :
+if ( ! function_exists( 'josie_admin_header_style' ) ) :
 /**
  * Styles the header image displayed on the Appearance > Header admin panel.
  *
- * @see joshua_custom_header_setup().
+ * @see josie_custom_header_setup().
  */
-function joshua_admin_header_style() {
+function josie_admin_header_style() {
 ?>
 	<style type="text/css">
             @import url(http://fonts.googleapis.com/css?family=Lato:100,700);
@@ -160,15 +160,15 @@ function joshua_admin_header_style() {
 	</style>
 <?php
 }
-endif; // joshua_admin_header_style
+endif; // josie_admin_header_style
 
-if ( ! function_exists( 'joshua_admin_header_image' ) ) :
+if ( ! function_exists( 'josie_admin_header_image' ) ) :
 /**
  * Custom header image markup displayed on the Appearance > Header admin panel.
  *
- * @see joshua_custom_header_setup().
+ * @see josie_custom_header_setup().
  */
-function joshua_admin_header_image() {
+function josie_admin_header_image() {
 	$style = sprintf( ' style="color:#%s;"', get_header_textcolor() );
 ?>
         
@@ -198,4 +198,4 @@ function joshua_admin_header_image() {
 	
 <?php
 }
-endif; // joshua_admin_header_image
+endif; // josie_admin_header_image

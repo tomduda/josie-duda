@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: joshua v1.0.7.2\n"
+"Project-Id-Version: josie v1.0.7.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-12 08:24+0100\n"
 "PO-Revision-Date: 2014-08-12 08:25+0100\n"
@@ -19,27 +19,27 @@ msgstr ""
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
 
-# @ joshua
+# @ josie
 #. translators: %s = single category title
 #: archive.php:22
 #, php-format
 msgid "Posts in the %s category:"
 msgstr "Beiträge der Kategorie %s:"
 
-# @ joshua
+# @ josie
 #. translators: %s = single tag title
 #: archive.php:26
 #, php-format
 msgid "Posts with the %s tag"
 msgstr "Beiträge mit dem Schlagwort %s"
 
-# @ joshua
+# @ josie
 #: archive.php:29
 #, php-format
 msgid "Author: %s"
 msgstr "Autor: %s"
 
-# @ joshua
+# @ josie
 #: archive.php:33
 #, php-format
 msgctxt "archive for a day"
@@ -51,43 +51,43 @@ msgctxt "Daily archives date format"
 msgid "F j, Y"
 msgstr "j. F Y"
 
-# @ joshua
+# @ josie
 #: archive.php:36
 #, php-format
 msgctxt "archive for a month"
 msgid "Posts from %s"
 msgstr "Beiträge vom %s"
 
-# @ joshua
+# @ josie
 #: archive.php:36
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y"
 
-# @ joshua
+# @ josie
 #: archive.php:39
 #, php-format
 msgctxt "archive for a year"
 msgid "Posts from %s"
 msgstr "Beiträge im Jahr %s"
 
-# @ joshua
+# @ josie
 #: archive.php:39
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "Y"
 
-# @ joshua
+# @ josie
 #: archive.php:42
 msgid "Asides"
 msgstr "Notizen"
 
-# @ joshua
+# @ josie
 #: archive.php:45
 msgid "Archives"
 msgstr "Archive"
 
-# @ joshua
+# @ josie
 #: comments.php:29
 #, php-format
 msgctxt "comments title"
@@ -96,50 +96,50 @@ msgid_plural "%1$s comments:"
 msgstr[0] "Ein Kommentar:"
 msgstr[1] "%1$s Kommentare:"
 
-# @ joshua
+# @ josie
 #: comments.php:47
 msgid "Comment navigation"
 msgstr "Kommentarnavigation"
 
-# @ joshua
+# @ josie
 #: comments.php:48
 msgid "Older Comments"
 msgstr "Ältere Kommentare"
 
-# @ joshua
+# @ josie
 #: comments.php:49
 msgid "Newer Comments"
 msgstr "Neuere Kommentare"
 
-# @ joshua
+# @ josie
 #: comments.php:59
 msgid "Comments are closed."
 msgstr "Kommentare geschlossen."
 
-# @ joshua
+# @ josie
 #: content-aside.php:17 content-page.php:32 content-single.php:42
 #: content.php:61
 msgid "Edit"
 msgstr "Bearbeiten"
 
-# @ joshua
+# @ josie
 #: content-none.php:16
 msgid "Page not available"
 msgstr "Seite nicht verfügbar"
 
-# @ joshua
+# @ josie
 #. translators: %s = search query
 #: content-none.php:20
 #, php-format
 msgid "Nothing found for %s"
 msgstr "Nichts gefunden zu %s"
 
-# @ joshua
+# @ josie
 #: content-none.php:22
 msgid "Nothing Found"
 msgstr "Nichts gefunden"
 
-# @ joshua
+# @ josie
 #: content-none.php:31
 #, php-format
 msgid ""
@@ -147,7 +147,7 @@ msgid ""
 msgstr ""
 "<a href=\"%1$s\">Hier</a> kannst du deinen ersten Beitrag veröffentlichen."
 
-# @ joshua
+# @ josie
 #: content-none.php:35
 msgid ""
 "You seem to be lost. To find what you are looking for check out the most "
@@ -156,7 +156,7 @@ msgstr ""
 "Du scheinst dich verirrt zu haben. Um zu finden, wonach du suchst, sieh dir "
 "die jüngsten Beiträgen weiter unten an, oder probier’s mal mit einer Suche:"
 
-# @ joshua
+# @ josie
 #: content-none.php:40
 msgid ""
 "Nothing matched your search terms. Check out the most recent articles below "
@@ -166,7 +166,7 @@ msgstr ""
 "Beiträgen weiter unten an, oder versuche es mit anders formulierten "
 "Suchbegriffen:"
 
-# @ joshua
+# @ josie
 #: content-none.php:45
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
@@ -174,98 +174,98 @@ msgid ""
 msgstr ""
 "Offenbar ist das Gewünschte nicht zu finden. Vielleicht hilft eine Suche?"
 
-# @ joshua
+# @ josie
 #: content-none.php:56
 msgid "Most recent posts:"
 msgstr "Aktuelle Beiträge:"
 
-# @ joshua
+# @ josie
 #: content-page.php:27 content-single.php:50 image.php:48
 msgid "Pages:"
 msgstr "Seiten:"
 
-# @ joshua
+# @ josie
 #. translators: used between list items, there is a space after the comma
 #: content-single.php:25 content.php:43
 msgid ", "
 msgstr ", "
 
-# @ joshua
+# @ josie
 #: content-single.php:38 content.php:57
 msgid "Leave a comment"
 msgstr "Kommentieren"
 
-# @ joshua
+# @ josie
 #: content-single.php:38 content.php:57
 msgid "1 Comment"
 msgstr "1 Kommentar"
 
-# @ joshua
+# @ josie
 #: content-single.php:38 content.php:57
 msgid "% Comments"
 msgstr "% Kommentare"
 
-# @ joshua
+# @ josie
 #: content.php:13 content.php:26
 msgid "Read "
 msgstr "Lies "
 
-# @ joshua
+# @ josie
 #: content.php:72
 msgctxt "First part of \"Read *article title* in title tag of Read more link"
 msgid "Read "
 msgstr "Lies "
 
-# @ joshua
+# @ josie
 #: content.php:72
 msgid "Read <span aria-hidden=\"true\">the article</span>"
 msgstr "<span aria-hidden=\"true\">Den Beitrag </span>Lesen"
 
-# @ joshua
+# @ josie
 #: content.php:79
 msgid "Continue Reading "
 msgstr "Weiterlesen"
 
-# @ joshua
+# @ josie
 #: content.php:79
 msgid "Continue Reading"
 msgstr "Weiterlesen"
 
-# @ joshua
+# @ josie
 #. translators: %s = text link: WordPress, URL: http://wordpress.org/
 #: footer.php:20
 #, php-format
 msgid "Proudly powered by %s"
 msgstr "Mit %s betrieben."
 
-# @ joshua
-#. translators: %1$s = text link: joshua, URL: http://wordpress.org/themes/joshua/, %2$s = text link: mor10.com, URL: http://mor10.com/
+# @ josie
+#. translators: %1$s = text link: josie, URL: http://wordpress.org/themes/josie/, %2$s = text link: mor10.com, URL: http://mor10.com/
 #: footer.php:27
 #, php-format
 msgid "Theme: %1$s by %2$s"
 msgstr "Theme: %1$s von %2$s"
 
-# @ joshua
+# @ josie
 #: functions.php:55
 msgid "Primary Menu"
 msgstr "Primäres Menü"
 
-# @ joshua
+# @ josie
 #: functions.php:56
 msgid "Social Menu"
 msgstr "Social Menü"
 
-# @ joshua
+# @ josie
 #: functions.php:85
 msgid "Sidebar"
 msgstr "Sidebar"
 
-# @ joshua
+# @ josie
 #: functions.php:94
 msgid "Footer Widgets"
 msgstr "Footer Widgets"
 
-# @ joshua
+# @ josie
 #: functions.php:95
 msgid ""
 "Footer widgets area appears, not surprisingly, in the footer of the site."
@@ -273,174 +273,174 @@ msgstr ""
 "Der „Footer“ Widget-Bereich erscheint, wenig überraschend, im Footer der "
 "Site."
 
-# @ joshua
+# @ josie
 #: header.php:25
 msgid "Skip to content"
 msgstr "Weiter zum Inhalt"
 
-# @ joshua
+# @ josie
 #: header.php:47
 msgid "Menu"
 msgstr "Menü"
 
-# @ joshua
+# @ josie
 #: header.php:53
 msgid "Search"
 msgstr "Suche"
 
-# @ joshua
+# @ josie
 #: image.php:25
 msgid "Featured in: "
 msgstr "Empfohlen in: "
 
-# @ joshua
+# @ josie
 #: image.php:26
 msgid "Full size image: "
 msgstr "Bild in voller Größe: "
 
-# @ joshua
+# @ josie
 #: image.php:27
 msgid "Edit attachment post"
 msgstr "Anhang bearbeiten"
 
-# @ joshua
+# @ josie
 #: inc/author-box.php:10
 msgid "Hide Author Bio"
 msgstr "Autorenbiografie verbergen"
 
-# @ joshua
+# @ josie
 #: inc/author-box.php:21
 #, php-format
 msgid "About %s"
 msgstr "Über %s"
 
-# @ joshua
+# @ josie
 #. translators: May be followed by another sentence. There is a space after the punctuation mark.
 #: inc/author-box.php:29
 msgid "One article and counting. "
 msgstr "Ein Beitrag, Tendenz steigend. "
 
-# @ joshua
+# @ josie
 #. translators: May be followed by another sentence. There is a space after the punctuation mark.
 #: inc/author-box.php:34
 #, php-format
 msgid "%s articles and counting. "
 msgstr "%s Beiträge, Tendenz steigend. "
 
-# @ joshua
+# @ josie
 #: inc/author-box.php:44
 #, php-format
 msgid "Follow %s on social media: "
 msgstr "Folge %s in Sozialen Medien: "
 
-# @ joshua
+# @ josie
 #: inc/author-box.php:46
 #, php-format
 msgid "Follow %s on Twitter"
 msgstr "Folge %s bei Twitter"
 
-# @ joshua
+# @ josie
 #: inc/author-box.php:46
 msgid "Twitter"
 msgstr "Twitter"
 
-# @ joshua
+# @ josie
 #: inc/author-box.php:49
 #, php-format
 msgid "Add %s to your Google+ circles"
 msgstr "Füge %s zu deinen Kreisen bei Google+ hinzu"
 
-# @ joshua
+# @ josie
 #: inc/author-box.php:49
 msgid "Google+"
 msgstr "Google+"
 
-# @ joshua
+# @ josie
 #: inc/author-box.php:52
 #, php-format
 msgid "Like %s on Facebook"
 msgstr "Teile bei Facebook, dass  %s dir gefällt"
 
-# @ joshua
+# @ josie
 #: inc/author-box.php:52
 msgid "Facebook"
 msgstr "Facebook"
 
-# @ joshua
+# @ josie
 #: inc/author-box.php:65
 #, php-format
 msgid "All posts by %s"
 msgstr "Alle Beiträge von %s"
 
-# @ joshua
+# @ josie
 #: inc/customizer.php:46
 msgid "Header Color"
 msgstr "Header-Farbe"
 
-# @ joshua
+# @ josie
 #: inc/customizer.php:65
 msgid "Link Color"
 msgstr "Link-Farbe"
 
-# @ joshua
+# @ josie
 #: inc/extras.php:63
 #, php-format
 msgid "Page %s"
 msgstr "Seite %s"
 
-# @ joshua
+# @ josie
 #: inc/template-tags.php:45
 msgid "&larr; Previous"
 msgstr "&larr; Vorherige"
 
-# @ joshua
+# @ josie
 #: inc/template-tags.php:46
 msgid "Next &rarr;"
 msgstr "Nächste &rarr;"
 
-# @ joshua
+# @ josie
 #: inc/template-tags.php:54
 msgid "Posts navigation"
 msgstr "Beitragsnavigation"
 
-# @ joshua
+# @ josie
 #: inc/template-tags.php:79 inc/template-tags.php:101
 msgid "Post navigation"
 msgstr "Beitragsnavigation"
 
-# @ joshua
+# @ josie
 #: inc/template-tags.php:82
 msgid "Previous Post:"
 msgstr "Vorheriger Beitrag:"
 
-# @ joshua
+# @ josie
 #: inc/template-tags.php:83
 msgid "Next Post:"
 msgstr "Nächster Beitrag:"
 
-# @ joshua
+# @ josie
 #: inc/template-tags.php:104
 msgid "Previous Image"
 msgstr "Vorheriges Bild"
 
-# @ joshua
+# @ josie
 #: inc/template-tags.php:105
 msgid "Next Image"
 msgstr "Nächstes Bild"
 
-# @ joshua
+# @ josie
 #: inc/template-tags.php:126
 msgctxt "Public posted on date"
 msgid "F jS, Y"
 msgstr "j. F Y"
 
-# @ joshua
+# @ josie
 #: inc/template-tags.php:128
 msgctxt "Public modified on date"
 msgid "F jS, Y"
 msgstr "j. F Y"
 
-# @ joshua
+# @ josie
 #: inc/template-tags.php:131
 #, php-format
 msgctxt ""
@@ -455,7 +455,7 @@ msgstr ""
 "\"> am </span><span class=\"posted-on\">%2$s</span><span class=\"mobile-hide"
 "\">.</span>"
 
-# @ joshua
+# @ josie
 #: search.php:16
 #, php-format
 msgid "Search Results for: %s"

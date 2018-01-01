@@ -2,7 +2,7 @@
 
 
 
-/* This is the front page for the Joshua-Duda child theme*/
+/* This is the front page for the josie-Duda child theme*/
 /* This is the version for ThomasDuda.com */
 
 get_header();

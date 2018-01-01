@@ -1,14 +1,14 @@
-joshua
+josie
 ====================================
-joshua WordPress Theme, Copyright 2014 Morten Rand-Hendriksen.
-joshua is distributed under the terms of the GNU GPL.
+josie WordPress Theme, Copyright 2014 Morten Rand-Hendriksen.
+josie is distributed under the terms of the GNU GPL.
 
 Licenses and External Assets
 ====================================
 
-joshua is distributed under the terms of the GNU GPL v2
+josie is distributed under the terms of the GNU GPL v2
 
-joshua's code base started out as _s (http://underscores.me) as it were on February 6, 2014.
+josie's code base started out as _s (http://underscores.me) as it were on February 6, 2014.
 
 The theme features three custom fonts: 
 Lato: http://www.google.com/fonts/specimen/Lato SIL Open Font Licence 1.1 http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL

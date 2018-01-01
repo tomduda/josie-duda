@@ -2,7 +2,7 @@
 /**
  * The Masonry-powered footer sidebar
  *
- * @package joshua
+ * @package josie
  */
 
 if ( ! is_active_sidebar( 'sidebar-2' ) ) {

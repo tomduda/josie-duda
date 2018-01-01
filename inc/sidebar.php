@@ -2,7 +2,7 @@
 /**
  * The Sidebar containing the main widget areas.
  *
- * @package joshua
+ * @package josie
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

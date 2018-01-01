@@ -1,4 +1,4 @@
-=== joshua ===
+=== josie ===
 Contributors: Thomas Francis Duda
 Tags: white, black, blue, light, one-column, two-columns, right-sidebar, responsive-layout, accessibility-ready, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, sticky-post, threaded-comments, translation-ready, rtl-language-support
 Requires at least Wordpress: 3.8
@@ -6,9 +6,9 @@ Tested up to: 4.7
 License: GPL 2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-joshua is a responsive modern design theme designed and developed by Thomas Francis Duda. 
+josie is a responsive modern design theme designed and developed by Thomas Francis Duda. 
 
-joshua\'s design is focussed on typography and aims to put the content front and center. Fonts are large and clear and scale according to screen width. On wider screens blockquotes and images can be aligned left and right to break out of the main stream and get a pull-quote effect. The featured images are responsive through the use of the <picture> element resulting in appropriate image sizes being loaded to fit individual screen sizes.
+josie\'s design is focussed on typography and aims to put the content front and center. Fonts are large and clear and scale according to screen width. On wider screens blockquotes and images can be aligned left and right to break out of the main stream and get a pull-quote effect. The featured images are responsive through the use of the <picture> element resulting in appropriate image sizes being loaded to fit individual screen sizes.
 
 
 == Changelog ==
@@ -72,7 +72,7 @@ Updates:
 - Norwegian Bokmål translation updated
 
 === 1.0.4 ===
-- Various translation improvements courtesy of Caspar Hübinger (@glueckpress). See https://github.com/mor10/joshua/pull/5 for details.
+- Various translation improvements courtesy of Caspar Hübinger (@glueckpress). See https://github.com/mor10/josie/pull/5 for details.
 
 === 1.0.2 ===
 - Featured image on single posts and pages and the first post on index page now responsive with <picture> element
@@ -82,7 +82,7 @@ Updates:
 == Features ==
 
 === Translations ===
-joshua ships with English as the default language. Translations are available for:
+josie ships with English as the default language. Translations are available for:
 - Catalan (CA via Faleg)
 - Chinese (simplified) (zh_CN via Jerry Wang)
 - Dutch (nl_NL via Richard van Naamen)
@@ -100,7 +100,7 @@ joshua ships with English as the default language. Translations are available fo
 - Turkish (tr_TR via Mehmet Yurtar)
 
 === RTL language support ===
-joshua ships with full RTL language support. All relevant content is reversed including menus, menu position, search bars, and other features. Sidebar can be left in its default position or moved to the left through the customizer.
+josie ships with full RTL language support. All relevant content is reversed including menus, menu position, search bars, and other features. Sidebar can be left in its default position or moved to the left through the customizer.
 
 === Customizer Options ===
 Extended options available from the Customizer:
@@ -109,7 +109,7 @@ Extended options available from the Customizer:
 2. Header text color
 3. Link color (changes link colors throughout the site including site title. Also sets color of .border-custom class.)
 4. Optional Header image of 1280px x 300px
-5. Sidebar position: joshua can be configured to display the sidebar on the right (default) or on the left.
+5. Sidebar position: josie can be configured to display the sidebar on the right (default) or on the left.
 6. Archive display: Archive pages show excerpts by default. This can be changed to display full content.
 
 === Widgetized Areas ===
@@ -127,12 +127,12 @@ The header features an optional social media menu which is displayed on the far 
 The social menu is inspired by this [article by Justin Tadlock](http://justintadlock.com/archives/2013/08/14/social-nav-menus-part-2).
 
 === Extras ===
-joshua ships with three border options for images and other elements that can be applied by adding a class to the desired element. The classes add a 1px solid border around the current element. The classes are .border-black (black), .border-gray (#b9b9b9 or 25% gra), and .border-custom (defaults to header color but is overridden by custom link color in Customizer). These classes are added to allow the user to add borders in a semantic and standards based way.
+josie ships with three border options for images and other elements that can be applied by adding a class to the desired element. The classes add a 1px solid border around the current element. The classes are .border-black (black), .border-gray (#b9b9b9 or 25% gra), and .border-custom (defaults to header color but is overridden by custom link color in Customizer). These classes are added to allow the user to add borders in a semantic and standards based way.
 
 === Licenses and External Assets ===
-joshua is distributed under the terms of the GNU GPL v2
+josie is distributed under the terms of the GNU GPL v2
 
-joshua\'s code base started out as _s (http://underscores.me) as it were on February 6, 2014.
+josie\'s code base started out as _s (http://underscores.me) as it were on February 6, 2014.
 
 The theme features three custom fonts: 
 Lato: http://www.google.com/fonts/specimen/Lato SIL Open Font Licence 1.1 http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
@@ -149,4 +149,4 @@ On-device grabs: Distressed Mailboxes, New Orleans - https://www.flickr.com/phot
 
 
 === Namesake ===
-joshua is named after my basset hound Joshua
+josie is named after my basset hound josie

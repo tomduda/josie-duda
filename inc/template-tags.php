@@ -4,16 +4,16 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package joshua
+ * @package josie
  */
 
-if ( ! function_exists( 'joshua_paging_nav' ) ) :
+if ( ! function_exists( 'josie_paging_nav' ) ) :
 /**
  * Display navigation to next/previous set of posts when applicable.
  *
  * @return void
  */
-function joshua_paging_nav() {
+function josie_paging_nav() {
 	// Don't print empty markup if there's only one page.
 	if ( $GLOBALS['wp_query']->max_num_pages < 2 ) {
 		return;
@@ -42,8 +42,8 @@ function joshua_paging_nav() {
 		'current'  => $paged,
 		'mid_size' => 2,
 		'add_args' => array_map( 'urlencode', $query_args ),
-		'prev_text' => __( '&larr; Previous', 'joshua' ),
-		'next_text' => __( 'Next &rarr;', 'joshua' ),
+		'prev_text' => __( '&larr; Previous', 'josie' ),
+		'next_text' => __( 'Next &rarr;', 'josie' ),
                 'type'      => 'list',
 	) );
 
@@ -51,7 +51,7 @@ function joshua_paging_nav() {
 
 	?>
 	<nav class="navigation paging-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'joshua' ); ?></h1>
+		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'josie' ); ?></h1>
 			<?php echo $links; ?>
 	</nav><!-- .navigation -->
 	<?php
@@ -59,13 +59,13 @@ function joshua_paging_nav() {
 }
 endif;
 
-if ( ! function_exists( 'joshua_post_nav' ) ) :
+if ( ! function_exists( 'josie_post_nav' ) ) :
 /**
  * Display navigation to next/previous post when applicable.
  *
  * @return void
  */
-function joshua_post_nav() {
+function josie_post_nav() {
 	// Don't print empty markup if there's nowhere to navigate.
 	$previous = ( is_attachment() ) ? get_post( get_post()->post_parent ) : get_adjacent_post( false, '', true );
 	$next     = get_adjacent_post( false, '', false );
@@ -76,11 +76,11 @@ function joshua_post_nav() {
 	?>
 	<nav class="navigation post-navigation" role="navigation">
             <div class="post-nav-box clear">
-		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'joshua' ); ?></h1>
+		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'josie' ); ?></h1>
 		<div class="nav-links">
 			<?php
-				previous_post_link( '<div class="nav-previous"><div class="nav-indicator">' . __( 'Previous Post:', 'joshua' ) . '</div><h1>%link</h1></div>', '%title' );
-				next_post_link(     '<div class="nav-next"><div class="nav-indicator">' . __( 'Next Post:', 'joshua' ) . '</div><h1>%link</h1></div>', '%title' );
+				previous_post_link( '<div class="nav-previous"><div class="nav-indicator">' . __( 'Previous Post:', 'josie' ) . '</div><h1>%link</h1></div>', '%title' );
+				next_post_link(     '<div class="nav-next"><div class="nav-indicator">' . __( 'Next Post:', 'josie' ) . '</div><h1>%link</h1></div>', '%title' );
 			?>
 		</div><!-- .nav-links -->
             </div><!-- .post-nav-box -->
@@ -89,20 +89,20 @@ function joshua_post_nav() {
 }
 endif;
 
-if ( ! function_exists( 'joshua_attachment_nav' ) ) :
+if ( ! function_exists( 'josie_attachment_nav' ) ) :
 /**
  * Display navigation to next/previous image in attachment pages.
  */
-function joshua_attachment_nav() {
+function josie_attachment_nav() {
 
 	?>
 	<nav class="navigation post-navigation" role="navigation">
             <div class="post-nav-box clear">
-		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'joshua' ); ?></h1>
+		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'josie' ); ?></h1>
 		<div class="nav-links">
                     <?php
-                        previous_image_link( false, '<div class="nav-previous"><h1>' . __( 'Previous Image', 'joshua' ) . '</h1></div>' ); 
-                        next_image_link( false, '<div class="nav-next"><h1>' . __( 'Next Image', 'joshua' ) . '</h1></div>' );
+                        previous_image_link( false, '<div class="nav-previous"><h1>' . __( 'Previous Image', 'josie' ) . '</h1></div>' ); 
+                        next_image_link( false, '<div class="nav-next"><h1>' . __( 'Next Image', 'josie' ) . '</h1></div>' );
                     ?>
 		</div><!-- .nav-links -->
             </div><!-- .post-nav-box -->
@@ -111,11 +111,11 @@ function joshua_attachment_nav() {
 }
 endif;
 
-if ( ! function_exists( 'joshua_posted_on' ) ) :
+if ( ! function_exists( 'josie_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  */
-function joshua_posted_on() {
+function josie_posted_on() {
 	$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 		$time_string .= '<time class="updated" datetime="%3$s">%4$s</time>';
@@ -123,12 +123,12 @@ function joshua_posted_on() {
 
 	$time_string = sprintf( $time_string,
 		esc_attr( get_the_date( 'c' ) ),
-		esc_html( get_the_date( _x('F jS, Y', 'Public posted on date', 'joshua') ) ),
+		esc_html( get_the_date( _x('F jS, Y', 'Public posted on date', 'josie') ) ),
 		esc_attr( get_the_modified_date( 'c' ) ),
-		esc_html( get_the_modified_date( _x('F jS, Y', 'Public modified on date', 'joshua') ) )
+		esc_html( get_the_modified_date( _x('F jS, Y', 'Public modified on date', 'josie') ) )
 	);
         // Translators: Text wrapped in mobile-hide class is hidden on wider screens.
-	printf( _x( '<span class="byline"></span><span class="mobile-hide"> on </span><span class="posted-on">%2$s</span><span class="mobile-hide">.</span>', 'mobile-hide class is used to hide connecting elements like "on" and "." on wider screens.', 'joshua' ),
+	printf( _x( '<span class="byline"></span><span class="mobile-hide"> on </span><span class="posted-on">%2$s</span><span class="mobile-hide">.</span>', 'mobile-hide class is used to hide connecting elements like "on" and "." on wider screens.', 'josie' ),
 		sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s">%2$s</a></span>',
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 			esc_html( get_the_author() )
@@ -144,7 +144,7 @@ endif;
 /**
  * Returns true if a blog has more than 1 category.
  */
-function joshua_categorized_blog() {
+function josie_categorized_blog() {
 	if ( false === ( $all_the_cool_cats = get_transient( 'all_the_cool_cats' ) ) ) {
 		// Create an array of all the categories that are attached to posts.
 		$all_the_cool_cats = get_categories( array(
@@ -162,29 +162,29 @@ function joshua_categorized_blog() {
 	}
 
 	if ( $all_the_cool_cats > 1 ) {
-		// This blog has more than 1 category so joshua_categorized_blog should return true.
+		// This blog has more than 1 category so josie_categorized_blog should return true.
 		return true;
 	} else {
-		// This blog has only 1 category so joshua_categorized_blog should return false.
+		// This blog has only 1 category so josie_categorized_blog should return false.
 		return false;
 	}
 }
 
 /**
- * Flush out the transients used in joshua_categorized_blog.
+ * Flush out the transients used in josie_categorized_blog.
  */
-function joshua_category_transient_flusher() {
+function josie_category_transient_flusher() {
 	// Like, beat it. Dig?
 	delete_transient( 'all_the_cool_cats' );
 }
-add_action( 'edit_category', 'joshua_category_transient_flusher' );
-add_action( 'save_post',     'joshua_category_transient_flusher' );
+add_action( 'edit_category', 'josie_category_transient_flusher' );
+add_action( 'save_post',     'josie_category_transient_flusher' );
 
 /*
  * Social media icon menu as per http://justintadlock.com/archives/2013/08/14/social-nav-menus-part-2
  */
 
-function joshua_social_menu() {
+function josie_social_menu() {
     if ( has_nav_menu( 'social' ) ) {
 	wp_nav_menu(
 		array(
@@ -208,7 +208,7 @@ function joshua_social_menu() {
  * Capture the custom background color and pass it to the background of featured images on single pages
  */
 
-function joshua_background_style() {
+function josie_background_style() {
     if ( is_single() && has_post_thumbnail() ) {
         $background_color = get_background_color();
         
@@ -218,20 +218,20 @@ function joshua_background_style() {
         
     }
 }
-add_action('wp_head', 'joshua_background_style');
+add_action('wp_head', 'josie_background_style');
 
-if ( ! function_exists( 'joshua_the_attached_image' ) ) :
+if ( ! function_exists( 'josie_the_attached_image' ) ) :
 /**
  * Print the attached image with a link to the next attached image.
  *
  * Appropriated from Twenty Fourteen 1.0
  */
-function joshua_the_attached_image() {
+function josie_the_attached_image() {
 	$post = get_post();
 	/**
 	 * Filter the default Twenty Fourteen attachment size.
 	 */
-	$attachment_size = apply_filters( 'joshua_attachment_size', array( 700, 700 ) );
+	$attachment_size = apply_filters( 'josie_attachment_size', array( 700, 700 ) );
 	$next_attachment_url = wp_get_attachment_url();
 
 	/*
@@ -284,11 +284,11 @@ endif;
  * Creates a <picture> tag and populate it with appropriate image sizes for different screen widths.
  * Works in place of the_post_thumbnail();
  */
-function joshua_the_responsive_thumbnail($post_id) {
+function josie_the_responsive_thumbnail($post_id) {
     
     // Check to see if there is a transient available. If there is, use it.
     if ( false === ( $thumb_data = get_transient( 'featured_image_' . $post_id ) ) ) {
-        joshua_set_image_transient($post_id);  
+        josie_set_image_transient($post_id);  
         $thumb_data = get_transient( 'featured_image_' . $post_id );
     }
     
@@ -305,14 +305,14 @@ function joshua_the_responsive_thumbnail($post_id) {
 /**
  * Create image transient to avoid looping through multiple image queries every time a post loads
  * Called any time a post is saved or updated right after existing transient is flushed.
- * Called by joshua_the_responsive_thumbnail when no transient is set.
+ * Called by josie_the_responsive_thumbnail when no transient is set.
  * 
  * - Get the featured image ID
  * - Get the alt text (if no alt text is defined, set the alt text to the post title)
  * - Build an array with each of the available image sizes + the alt text
  * - Set a transient with the label "featured_image_[post_id] that expires in 12 months
  */
-function joshua_set_image_transient($post_id) {
+function josie_set_image_transient($post_id) {
     $attachment_id = get_post_thumbnail_id($post_id);
     $alt_text = esc_html( get_post_meta($attachment_id, '_wp_attachment_image_alt', true) );
     if ( !$alt_text ) { $alt_text = esc_html( get_the_title($post_id) ); }
@@ -336,11 +336,11 @@ function joshua_set_image_transient($post_id) {
 /**
  * Reset featured image transient when the post is updated
  */
-add_action('save_post', 'joshua_reset_thumb_data_transient');
+add_action('save_post', 'josie_reset_thumb_data_transient');
 
-function joshua_reset_thumb_data_transient( $post_id ) {
+function josie_reset_thumb_data_transient( $post_id ) {
     delete_transient( 'featured_image_' . $post_id );
     if ( has_post_thumbnail($post_id) ) {
-        joshua_set_image_transient($post_id);
+        josie_set_image_transient($post_id);
     }
 }

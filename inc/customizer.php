@@ -1,8 +1,8 @@
 <?php
 /**
- * joshua Theme Customizer
+ * josie Theme Customizer
  *
- * @package joshua
+ * @package josie
  */
 
 /**
@@ -10,29 +10,29 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function joshua_customize_register( $wp_customize ) {
+function josie_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 }
-add_action( 'customize_register', 'joshua_customize_register' );
+add_action( 'customize_register', 'josie_customize_register' );
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function joshua_customize_preview_js() {
-	wp_enqueue_script( 'joshua_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20130508', true );
+function josie_customize_preview_js() {
+	wp_enqueue_script( 'josie_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20130508', true );
 }
-add_action( 'customize_preview_init', 'joshua_customize_preview_js' );
+add_action( 'customize_preview_init', 'josie_customize_preview_js' );
 
 /**
  * Add custom heading background color and site-wide link color
  */
 
-function joshua_register_theme_customizer( $wp_customize ) {
+function josie_register_theme_customizer( $wp_customize ) {
 
     $wp_customize->add_setting(
-        'joshua_header_color',
+        'josie_header_color',
         array(
             'default'     => '#0587BF',
             'sanitize_callback'    => 'sanitize_hex_color'
@@ -44,15 +44,15 @@ function joshua_register_theme_customizer( $wp_customize ) {
             $wp_customize,
             'header_color',
             array(
-                'label'      => __( 'Header Color', 'joshua' ),
+                'label'      => __( 'Header Color', 'josie' ),
                 'section'    => 'colors',
-                'settings'   => 'joshua_header_color'
+                'settings'   => 'josie_header_color'
             )
         )
     );
 
     $wp_customize->add_setting(
-        'joshua_link_color',
+        'josie_link_color',
         array(
             'default'     => '#000000',
             'sanitize_callback'    => 'sanitize_hex_color'
@@ -64,9 +64,9 @@ function joshua_register_theme_customizer( $wp_customize ) {
             $wp_customize,
             'link_color',
             array(
-                'label'      => __( 'Link Color', 'joshua' ),
+                'label'      => __( 'Link Color', 'josie' ),
                 'section'    => 'colors',
-                'settings'   => 'joshua_link_color'
+                'settings'   => 'josie_link_color'
             )
         )
     );
@@ -77,9 +77,9 @@ function joshua_register_theme_customizer( $wp_customize ) {
 	'option_section',
 	// Arguments array
 	array(
-            'title' => __( 'Theme Options', 'joshua' ),
+            'title' => __( 'Theme Options', 'josie' ),
             'capability' => 'edit_theme_options',
-            'description' => __( 'Change the default display options for the theme.', 'joshua' )
+            'description' => __( 'Change the default display options for the theme.', 'josie' )
         )
     );
     
@@ -92,7 +92,7 @@ function joshua_register_theme_customizer( $wp_customize ) {
         array(
             'default' => 'right-sidebar',
             'type' => 'option',
-            'sanitize_callback' => 'joshua_sanitize_layout'
+            'sanitize_callback' => 'josie_sanitize_layout'
         )
     );
     $wp_customize->add_control(
@@ -101,11 +101,11 @@ function joshua_register_theme_customizer( $wp_customize ) {
 	// Arguments array
 	array(
             'type' => 'radio',
-            'label' => __( 'Sidebar position', 'joshua' ),
+            'label' => __( 'Sidebar position', 'josie' ),
             'section' => 'option_section',
             'choices' => array(
-                'left-sidebar' => __( 'Left sidebar', 'joshua' ),
-                'right-sidebar' => __( 'Right sidebar', 'joshua' )
+                'left-sidebar' => __( 'Left sidebar', 'josie' ),
+                'right-sidebar' => __( 'Right sidebar', 'josie' )
             ),
             // This last one must match setting ID from above
             'settings' => 'layout_setting'
@@ -120,7 +120,7 @@ function joshua_register_theme_customizer( $wp_customize ) {
         array(
             'default' => 'excerpt',
             'type' => 'option',
-            'sanitize_callback' => 'joshua_sanitize_archive'
+            'sanitize_callback' => 'josie_sanitize_archive'
         )
     );
     $wp_customize->add_control(
@@ -129,12 +129,12 @@ function joshua_register_theme_customizer( $wp_customize ) {
 	// Arguments array
 	array(
             'type' => 'radio',
-            'label' => __( 'Archive display', 'joshua' ),
-            'description' => __( 'Display excerpts or full content with optional "More" tag in the blog index and archive pages.', 'joshua' ),
+            'label' => __( 'Archive display', 'josie' ),
+            'description' => __( 'Display excerpts or full content with optional "More" tag in the blog index and archive pages.', 'josie' ),
             'section' => 'option_section',
             'choices' => array(
-                'excerpt' => __( 'Excerpt', 'joshua' ),
-                'content' => __( 'Full content', 'joshua' )
+                'excerpt' => __( 'Excerpt', 'josie' ),
+                'content' => __( 'Full content', 'josie' )
             ),
             // This last one must match setting ID from above
             'settings' => 'archive_setting'
@@ -142,10 +142,10 @@ function joshua_register_theme_customizer( $wp_customize ) {
     );
 
 }
-add_action( 'customize_register', 'joshua_register_theme_customizer' );
+add_action( 'customize_register', 'josie_register_theme_customizer' );
 
 // Sanitize sidebar layout
-function joshua_sanitize_layout( $value ) {
+function josie_sanitize_layout( $value ) {
     if ( ! in_array( $value, array( 'left-sidebar', 'right-content' ) ) )
         $value = 'right-sidebar';
  
@@ -153,18 +153,18 @@ function joshua_sanitize_layout( $value ) {
 }
 
 // Sanitize archive display
-function joshua_sanitize_archive( $value ) {
+function josie_sanitize_archive( $value ) {
     if ( ! in_array( $value, array( 'excerpt', 'content' ) ) )
         $value = 'excerpt';
  
     return $value;
 }
 
-function joshua_customizer_css() {
+function josie_customizer_css() {
     ?>
     <style type="text/css">
         .site-branding {
-            background: <?php echo get_theme_mod( 'joshua_header_color' ); ?>;
+            background: <?php echo get_theme_mod( 'josie_header_color' ); ?>;
         }
 
         .category-list a:hover,
@@ -177,14 +177,14 @@ function joshua_customizer_css() {
         .entry-title a:hover,
         .entry-content a,
         .comment-content a {
-            color: <?php echo get_theme_mod( 'joshua_link_color' ); ?>;
+            color: <?php echo get_theme_mod( 'josie_link_color' ); ?>;
         }
 
         .border-custom {
-            border: <?php echo get_theme_mod( 'joshua_link_color' ); ?> solid 1px;
+            border: <?php echo get_theme_mod( 'josie_link_color' ); ?> solid 1px;
         }
 
     </style>
     <?php
 }
-add_action( 'wp_head', 'joshua_customizer_css' );
+add_action( 'wp_head', 'josie_customizer_css' );

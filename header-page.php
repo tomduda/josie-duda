@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package joshua
+ * @package josie
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -23,7 +23,7 @@
 
 	<header id="masthead" class="site-header" role="banner">
        <!-- <div class="top-menu">Top Menu</div> -->
-            <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'joshua' ); ?></a>
+            <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'josie' ); ?></a>
                 <?php if ( get_header_image() && ('blank' == get_header_textcolor()) ) { ?>
                 <figure class="header-image">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -45,15 +45,15 @@
 		</div>
 
 		<nav id="site-navigation" class="main-navigation clear" role="navigation">
-                    <h1 class="menu-toggle"><a href="#"><?php _e( 'Menu', 'joshua' ); ?></a></h1>
+                    <h1 class="menu-toggle"><a href="#"><?php _e( 'Menu', 'josie' ); ?></a></h1>
 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
 
                         <div class="search-toggle">
                             <i class="fa fa-search"></i>
-                            <a href="#search-container" class="screen-reader-text"><?php _e( 'Search', 'joshua' ); ?></a>
+                            <a href="#search-container" class="screen-reader-text"><?php _e( 'Search', 'josie' ); ?></a>
                         </div>
-                        <?php joshua_social_menu(); ?>
+                        <?php josie_social_menu(); ?>
 
 
 		</nav><!-- #site-navigation -->

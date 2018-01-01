@@ -5,7 +5,7 @@
  * The area of the page that contains both current comments
  * and the comment form.
  *
- * @package joshua
+ * @package josie
  */
 
 /*
@@ -26,7 +26,7 @@ if ( post_password_required() ) {
 		<h2 class="comments-title">
 			<?php
  
-				printf( _nx( 'One comment:', '%1$s comments:', get_comments_number(), 'comments title', 'joshua' ),
+				printf( _nx( 'One comment:', '%1$s comments:', get_comments_number(), 'comments title', 'josie' ),
 					number_format_i18n( get_comments_number() )
                                 );
 			?>
@@ -44,9 +44,9 @@ if ( post_password_required() ) {
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-below" class="comment-navigation clear" role="navigation">
-			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'joshua' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( sprintf( '<i class="fa fa-arrow-circle-o-left">%s</i> ', __( 'Older Comments', 'joshua' ) ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( sprintf( '<i class="fa fa-arrow-circle-o-right">%s</i> ', __( 'Newer Comments', 'joshua' ) ) ); ?></div>
+			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'josie' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( sprintf( '<i class="fa fa-arrow-circle-o-left">%s</i> ', __( 'Older Comments', 'josie' ) ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( sprintf( '<i class="fa fa-arrow-circle-o-right">%s</i> ', __( 'Newer Comments', 'josie' ) ) ); ?></div>
 		</nav><!-- #comment-nav-below -->
 		<?php endif; // check for comment navigation ?>
 
@@ -56,7 +56,7 @@ if ( post_password_required() ) {
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="no-comments"><?php _e( 'Comments are closed.', 'joshua' ); ?></p>
+		<p class="no-comments"><?php _e( 'Comments are closed.', 'josie' ); ?></p>
 	<?php endif; ?>
 
 	<?php comment_form(); ?>

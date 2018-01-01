@@ -3,7 +3,7 @@
  * The template for displaying 404 pages (Not Found).
  * Calls content-none.php which shows appropriate error + most recent posts.
  *
- * @package joshua
+ * @package josie
  */
 
 get_header(); ?>

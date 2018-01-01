@@ -8,7 +8,7 @@
  * E.g., it puts together the home page when no home.php file exists.
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package joshua
+ * @package josie
  */
  if (is_category('scamming-the-scammers')) {
 get_header('scamming');
@@ -36,7 +36,7 @@ get_header('blog');
 
 			<?php endwhile; ?>
 
-			<?php joshua_paging_nav(); ?>
+			<?php josie_paging_nav(); ?>
 
 		<?php else : ?>
 

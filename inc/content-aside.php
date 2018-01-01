@@ -1,7 +1,7 @@
 <?php
 /**
  * Custom template for Asides
- * @package joshua
+ * @package josie
  */
 ?>
 
@@ -13,8 +13,8 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer entry-meta">
-            <?php joshua_posted_on(); ?>
-            <?php edit_post_link( sprintf( ' | %s', __( 'Edit', 'joshua' ) ), '<span class="edit-link">', '</span>' ); ?>
+            <?php josie_posted_on(); ?>
+            <?php edit_post_link( sprintf( ' | %s', __( 'Edit', 'josie' ) ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-footer -->
     </div>
 </article><!-- #post-## -->

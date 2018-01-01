@@ -4,7 +4,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package joshua
+ * @package josie
  */
 ?>
 
@@ -13,13 +13,13 @@
 	<header class="entry-header">
 		<h1 class="entry-title">
                     <?php
-                    if ( is_404() ) { _e( 'Page not available', 'joshua' );
+                    if ( is_404() ) { _e( 'Page not available', 'josie' );
 
                     } else if ( is_search() ) {
                     	/* translators: %s = search query */
-                    	printf( __( 'Nothing found for %s', 'joshua'), '<em>' . get_search_query() . '</em>' );
+                    	printf( __( 'Nothing found for %s', 'josie'), '<em>' . get_search_query() . '</em>' );
                     } else {
-                    	_e( 'Nothing Found', 'joshua' );
+                    	_e( 'Nothing Found', 'josie' );
                     }
                     ?>
                 </h1>
@@ -28,21 +28,21 @@
 	<div class="entry-content">
 		<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
-			<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'joshua' ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
+			<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'josie' ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
 
                 <?php elseif ( is_404() ) : ?>
 
-                        <p><?php _e( 'You seem to be lost. To find what you are looking for check out the most recent articles below or try a search:', 'joshua' ); ?></p>
+                        <p><?php _e( 'You seem to be lost. To find what you are looking for check out the most recent articles below or try a search:', 'josie' ); ?></p>
                         <?php get_search_form(); ?>
 
 		<?php elseif ( is_search() ) : ?>
 
-			<p><?php _e( 'Nothing matched your search terms. Check out the most recent articles below or try searching for something else:', 'joshua' ); ?></p>
+			<p><?php _e( 'Nothing matched your search terms. Check out the most recent articles below or try searching for something else:', 'josie' ); ?></p>
 			<?php get_search_form(); ?>
 
 		<?php else : ?>
 
-			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'joshua' ); ?></p>
+			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'josie' ); ?></p>
 			<?php get_search_form(); ?>
 
 		<?php endif; ?>
@@ -53,7 +53,7 @@
     if ( is_404() || is_search() ) {
 
     ?>
-        <header class="page-header"><h1 class="page-title"><?php _e( 'Most recent posts:', 'joshua' ); ?></h1></header>
+        <header class="page-header"><h1 class="page-title"><?php _e( 'Most recent posts:', 'josie' ); ?></h1></header>
     <?php
         // Get the 6 latest posts
         $args = array(

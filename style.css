@@ -1,20 +1,20 @@
 ﻿
 /*
-Theme Name: Joshua-Duda
+Theme Name: Josie-Duda
 Theme URI: http://www.chadrokeach.com/tom
 Author: Thomas Francis Duda
 Author URI: http://www.chadrokeach.com/tom
-Description: joshua is a responsive, accessible, high-resolution theme featuring custom header and custom link colors, large images, and easy to read typography that scales to fit all screens. Other features include keyboard accessible navigation, optional social menu, sidebar- and footer widgets, no-sidebar page template, Aside post format, and collapsible author profile box. joshua is translation ready and ships in English with translations in Catalan, Chinese (simplified), Dutch, Finnish, French, German, Hungarian, Italian, Norwegian BokmÃ¥l, Persian, Russian, Spanish, Swedish, and Turkish.
-Version: 2.0.3
+Description: Josie is a responsive, accessible, high-resolution theme featuring custom header and custom link colors, large images, and easy to read typography that scales to fit all screens. Other features include keyboard accessible navigation, optional social menu, sidebar- and footer widgets, no-sidebar page template, Aside post format, and collapsible author profile box. josie is translation ready and ships in English with translations in Catalan, Chinese (simplified), Dutch, Finnish, French, German, Hungarian, Italian, Norwegian BokmÃ¥l, Persian, Russian, Spanish, Swedish, and Turkish.
+Version: 0.1
 License: GNU General Public License
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: joshua
+Text Domain: Josie
 Domain Path: /languages/
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-joshua is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+Josie is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
 
 CSS structure 3.0 onwards based on http://mdo.github.io/code-guide/#css-syntax
 
@@ -1611,7 +1611,7 @@ div.article-content{
 
 /* Media querie for very large screens */
 
- .joshua-page .entry-content{    
+ .josie-page .entry-content{    
     position: relative;    
     max-width: 100%;    
     padding: 0;    
@@ -2464,7 +2464,7 @@ nav.navigation.post-navigation{display:none}
  /* >= 1539PX SCREENS */
 
 /* @media screen and (max-width: 1539px) and (min-width: 1160px){ 
-    .content-area.joshua-page {
+    .content-area.josie-page {
         margin-left: 0;
         padding-left: 0;     }
  } */
