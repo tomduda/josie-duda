@@ -15,7 +15,7 @@ josie\'s design is focussed on typography and aims to put the content front and 
 
 It is December 31st, 2017 and it is time to retire Joshua and pass the tourch to my other basset hound Josie. She just gave birth to eight beautiful puppies on Dec. 26th and this wordpress theme is henceforth dedicated to her and her babies. Please note: Joshua is indeed the father :)
 
-It is january first and I just wanted to check in on an alternate computer.
+It is january first and I just wanted to check in on an alternate computer.  I created a new branch called (creatively enough) Josie
 
 === Namesake ===
 josie is named after my basset hound josie

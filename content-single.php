@@ -1,71 +1,71 @@
-<?php
-/**
- * Outputs the single post content. Displayed by single.php.
- * 
- * @package josie
- */
-?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+
+
+
+
     
-    <?php 
-    if (has_post_thumbnail()) {
-        echo '<div class="single-post-thumbnail clear">';
-        echo '<div class="image-shifter">';
-        josie_the_responsive_thumbnail( get_the_ID() );
-        echo '</div>';
-        echo '</div>';
-    }
-    ?>
     
-	<header class="entry-header clear">
             
-            <?php
-                /* translators: used between list items, there is a space after the comma */
-                $category_list = get_the_category_list( __( ', ', 'josie' ) );
-
-                if ( josie_categorized_blog() ) {
-                    echo '<div class="category-list">' . $category_list . '</div>';
-                }
-            ?>
-		<h1 class="entry-title"><?php the_title(); ?></h1>
-
-		<div class="entry-meta">
-                    <?php josie_posted_on(); ?>
-                    <?php 
-                    if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) { 
-                        echo '<span class="comments-link">';
+            
                         comments_popup_link( __( 'Leave a comment', 'josie' ), __( '1 Comment', 'josie' ), __( '% Comments', 'josie' ) );
                         echo '</span>';
-                    }
-                    ?>
+                        echo '<span class="comments-link">';
+                    <?php 
                     <?php edit_post_link( __( 'Edit', 'josie' ), '<span class="edit-link">', '</span>' ); ?>
-		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php the_content(); ?>
-        <h1>This is content-single.php</h1>
-      <!--  <div class="about-author ">
-            <div class="about-author-image">
+                    <?php josie_posted_on(); ?>
+                    ?>
+                    echo '<div class="category-list">' . $category_list . '</div>';
+                    if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) { 
+                    }
+                $category_list = get_the_category_list( __( ', ', 'josie' ) );
+                'after'  => '</div>',
+                'before' => '<div class="page-links">' . __( 'Pages:', 'josie' ),
+                /* translators: used between list items, there is a space after the comma */
                 <?php echo get_avatar(get_the_author_meta('ID'), 129);?>
+                if ( josie_categorized_blog() ) {
+                }
                <p><?php echo get_the_author_meta('nickname')?></p>
+            ) );
             </div>
+            <?php
+            <div class="about-author-image">
             <div class="about-author-text"><h6>About the Author</h6></div>
-            
+            ?>
+            echo get_the_tag_list( '<ul><li><i class="fa fa-tag"></i>', '</li><li><i class="fa fa-tag"></i>', '</li></ul>' );
+            wp_link_pages( array(
         </div> -->
-
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'josie' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php
-			echo get_the_tag_list( '<ul><li><i class="fa fa-tag"></i>', '</li><li><i class="fa fa-tag"></i>', '</li></ul>' );
-		?>
-	</footer><!-- .entry-footer -->
+        </div><!-- .entry-meta -->
+        <?php
+        <?php
+        <?php the_content(); ?>
+        <div class="entry-meta">
+        <h1 class="entry-title"><?php the_title(); ?></h1>
+        <h1>This is content-single.php</h1>
+        ?>
+        ?>
+        echo '</div>';
+        echo '</div>';
+        echo '<div class="image-shifter">';
+        echo '<div class="single-post-thumbnail clear">';
+        josie_the_responsive_thumbnail( get_the_ID() );
+      <!--  <div class="about-author ">
+    </div><!-- .entry-content -->
+    </footer><!-- .entry-footer -->
+    </header><!-- .entry-header -->
+    <?php 
+    <div class="entry-content">
+    <footer class="entry-footer">
+    <header class="entry-header clear">
+    ?>
+    if (has_post_thumbnail()) {
+    }
+ * 
+ * @package josie
+ * Outputs the single post content. Displayed by single.php.
+ */
+/**
 </article><!-- #post-## -->
+<?php
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+?>
