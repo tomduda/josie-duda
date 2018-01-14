@@ -790,12 +790,37 @@ a:focus.page-numbers{
 }
 /* Content Posts and pages */
 .sticky-header {        
+
     position: fixed;    
     width: 100%;    
     z-index: 100;    
     top: 0;    
     left: 0;
+
+    animation: fixed-header-animation 1s forwards;
 }
+
+@keyframes fixed-header-animation{
+    0%{
+      /*  background-image: url("./images/thomas-duda-logo.png");
+       background-repeat: no-repeat;
+        background-image-opacity: 0; */
+       
+    }
+    
+    100%{
+       /* background-image: url("./images/thomas-duda-logo.png");
+            background-repeat: no-repeat;
+            background-image-size: 100%;
+            background-image-opacity: 1; */
+         padding-top: .5em;
+        padding-bottom: .5em;
+        padding-left: 3.5em;
+    }
+}
+
+
+
 .hentry { margin: 0 0 1.5em; }
 .updated { display: none; }
 .page-links {
